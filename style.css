@@ -1,13 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap");
+
 * {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  background-color: #03adfc;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #005c87;
+}
+
 .container {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
 }
 
-.container > h1 {
+.container > div {
   margin: auto;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+}
+
+.long-container {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.long-container > div {
+  height: 100%;
+}
+
+.long-container > div:nth-child(1) {
+  background-color: #fcba03;
+}
+
+.long-container > div:nth-child(2) {
+  background-color: #fc8403;
+}
+
+.long-container > div:nth-child(3) {
+  background-color: #03adfc;
+}
+
+.long-container > div:nth-child(4) {
+  background-color: #801dab;
+}
+
+.long-container > div:nth-child(5) {
+  background-color: #e30e0e;
 }
